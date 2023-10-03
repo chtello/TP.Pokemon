@@ -7,6 +7,7 @@ function Card({ imag, title, desc }) {
             <img src={imag} alt="" />
             <p>{desc}</p>
             <button onClick={() => onDelete(Card.id)}>Eliminar</button>
+            <button onClick={() => LikesCont(Card.id)}>Like</button>
         </div>
     );
 }

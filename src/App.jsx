@@ -69,6 +69,9 @@ function App() {
   const deleteCard = (CardId) => {
     setCards(cards.filter((Card) => Card.id !== CardId));
   };
+  const LikesCard = (CardId) => {
+    setCards(cards.filter((Card) => Card.id !== CardId));
+  };
 
 	return (
 		<div className="contCard">
@@ -79,6 +82,7 @@ function App() {
 					title={card.title}
           desc={card.desc}
           onDelete={deleteCard} 
+          LikesCont={LikesCard}
 				/> 
 			))}
 		</div>
